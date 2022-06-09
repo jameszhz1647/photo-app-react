@@ -19,7 +19,7 @@ class NavBar extends React.Component {
     }
 
     createNav(){
-        fetch('/api/profile', {
+        fetch('https://photo-app-zz-hw5.herokuapp.com/api/profile', {
             headers: getHeaders()
         }).then(response => response.json())
         .then(data => {

@@ -27,7 +27,7 @@ class Stories extends React.Component {
         );
     };
     createStories(){
-        fetch('/api/stories', {
+        fetch('https://photo-app-zz-hw5.herokuapp.com/api/stories', {
             headers: getHeaders()
         }).then(response => response.json())
         .then(data => {
